@@ -1,0 +1,81 @@
+:root {
+  --buton: #0a69b5;
+  --negru: #272727;
+  --buton-hover: #ba160a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+nav ul {
+  list-style: none;
+  background-color: var(--negru);
+  border-top: 10px solid var(--negru);
+  border-bottom: 10px solid var(--negru);
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  color: var(--buton);
+  font-weight: 900;
+}
+
+nav ul li a:hover {
+  color: var(--buton-hover);
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  background-color: var(--buton);
+  color: var(--negru);
+}
+
+.logo:hover {
+  background-color: var(--buton-hover);
+  color: var(--negru);
+}
+
+@media screen and (min-width: 578px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+/* ################### Banner @@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#banner {
+  min-height: 88vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("img/bg-0.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f7fff7;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  font-style: italic;
+}
