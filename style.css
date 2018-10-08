@@ -79,3 +79,23 @@ nav ul li a:hover {
   text-align: center;
   font-style: italic;
 }
+
+/* ######## videos ############## */
+
+.videos {
+  height: 90vh;
+  background-color: black;
+  text-align: center;
+  padding: 30px;
+}
+
+.video-name {
+  display: block;
+  color: #f5b800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.activ {
+  color: #f5b800;
+}
